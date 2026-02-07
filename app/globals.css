@@ -3,6 +3,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Brand Colors */
+  --color-primary: #2B56FF;
+  --color-primary-hover: #1E44D9;
+  --color-primary-light: #EEF2FF;
+  
+  --color-success: #249424;
+  --color-success-light: #ECFDF5;
+  
+  --color-surface: #F6F7F8;
+  --color-surface-elevated: #FFFFFF;
+  
+  /* Text Colors */
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #9CA3AF;
+  
+  /* Border Colors */
+  --color-border: #E5E7EB;
+  --color-border-light: #F3F4F6;
 }
 
 @theme inline {
@@ -10,6 +30,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Custom brand colors for Tailwind */
+  --color-brand: #2B56FF;
+  --color-brand-hover: #1E44D9;
+  --color-brand-light: #EEF2FF;
+  --color-brand-success: #249424;
+  --color-brand-surface: #F6F7F8;
 }
 
 @media (prefers-color-scheme: dark) {
