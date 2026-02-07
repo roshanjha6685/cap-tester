@@ -24,7 +24,7 @@ interface FeaturedCampsProps {
   camps: Camp[];
 }
 
-export default function FeaturedCamps({ camps }: FeaturedCampsProps) {
+export default function FeaturedCamps({ camps }: any) {
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-IN', { month: 'short', day: 'numeric' });
@@ -55,7 +55,7 @@ export default function FeaturedCamps({ camps }: FeaturedCampsProps) {
 
         {/* Camps Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {camps.map((camp) => (
+          {camps.map((camp:any) => (
             <Link
               key={camp.id}
               href={getCampUrl(camp)}
@@ -103,7 +103,7 @@ export default function FeaturedCamps({ camps }: FeaturedCampsProps) {
 
                 {/* Features - Chips */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {camp.featuresShort.slice(0, 3).map((feature, index) => (
+                  {camp.featuresShort.slice(0, 3).map((feature:any, index:any) => (
                     <span
                       key={index}
                       className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium"
