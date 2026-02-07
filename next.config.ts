@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: __dirname,
-  },
+  output: 'standalone', // Important for Docker
+  // Baaki tumhare existing config...
 };
 
 export default nextConfig;
